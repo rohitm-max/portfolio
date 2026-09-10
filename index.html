@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rohit Manna · Retention & Lifecycle Growth</title>
+<meta name="description" content="Retention and lifecycle growth consultant for D2C brands. CRM strategy, WhatsApp and email lifecycle systems, content intelligence, and AI-assisted growth workflows.">
+<meta property="og:title" content="Rohit Manna · Retention & Lifecycle Growth">
+<meta property="og:description" content="I build repeat-revenue engines for D2C brands.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='2' y='2' width='13' height='13' fill='%230F766E'/%3E%3Crect x='17' y='2' width='13' height='13' fill='%23E7F0EE'/%3E%3Crect x='2' y='17' width='13' height='13' fill='%23E7F0EE'/%3E%3Crect x='17' y='17' width='13' height='13' fill='%230F766E'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FAFAF7;
+  --ink:#16211F;
+  --muted:#5B6B67;
+  --teal:#0F766E;
+  --teal-deep:#0A4F4A;
+  --cell:#E7F0EE;
+  --line:#D9E0DD;
+  --display:'Archivo',system-ui,-apple-system,sans-serif;
+  --body:'IBM Plex Sans',system-ui,-apple-system,sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,'SF Mono',Menlo,monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--teal);text-decoration:none}
+a:hover{color:var(--teal-deep)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--teal);outline-offset:3px;border-radius:2px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);font-weight:500}
+.section{padding:88px 0;border-top:1px solid var(--line)}
+.section-head{display:flex;align-items:baseline;gap:18px;margin-bottom:42px;flex-wrap:wrap}
+.section-head h2{font-family:var(--display);font-weight:800;font-size:clamp(26px,3.4vw,34px);letter-spacing:-.01em}
+
+/* ---------- nav ---------- */
+.nav{position:sticky;top:0;z-index:50;background:rgba(250,250,247,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-family:var(--mono);font-weight:500;font-size:14px;letter-spacing:.08em;color:var(--ink)}
+.brand b{color:var(--teal)}
+.nav-links{display:flex;gap:26px;align-items:center}
+.nav-links a{font-family:var(--mono);font-size:12.5px;letter-spacing:.06em;color:var(--muted)}
+.nav-links a:hover{color:var(--ink)}
+.btn{display:inline-block;font-family:var(--mono);font-size:13px;letter-spacing:.04em;padding:10px 18px;border:1.5px solid var(--teal);color:var(--teal);border-radius:3px;transition:background .15s,color .15s}
+.btn:hover{background:var(--teal);color:#fff}
+.btn-solid{background:var(--teal);color:#fff}
+.btn-solid:hover{background:var(--teal-deep);color:#fff}
+@media(max-width:720px){.nav-links a:not(.btn){display:none}}
+
+/* ---------- hero ---------- */
+.hero{padding:84px 0 72px}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center}
+.hero h1{font-family:var(--display);font-weight:800;font-size:clamp(38px,5.6vw,62px);line-height:1.04;letter-spacing:-.022em;margin:18px 0 20px}
+.hero h1 em{font-style:normal;color:var(--teal)}
+.hero p{color:var(--muted);max-width:54ch;font-size:18px}
+.hero-cta{margin-top:30px;display:flex;gap:14px;flex-wrap:wrap}
+/* cohort staircase signature */
+.cohort{display:grid;grid-template-columns:repeat(7,1fr);gap:7px;max-width:340px;margin-left:auto}
+.cohort i{aspect-ratio:1/1;border:1px solid var(--line);border-radius:2px;background:transparent;display:block}
+.cohort i.f{background:var(--cell);border-color:var(--cell)}
+.cohort i.d{background:var(--teal);border-color:var(--teal);opacity:0;transform:scale(.6);animation:pop .5s forwards}
+@keyframes pop{to{opacity:1;transform:scale(1)}}
+.cohort i.x{visibility:hidden}
+.cohort-cap{font-family:var(--mono);font-size:11px;color:var(--muted);text-align:right;margin-top:12px;letter-spacing:.06em}
+@media(prefers-reduced-motion:reduce){.cohort i.d{animation:none;opacity:1;transform:none}html{scroll-behavior:auto}.reveal{opacity:1!important;transform:none!important}}
+@media(max-width:860px){.hero-grid{grid-template-columns:1fr}.cohort{margin:8px auto 0}}
+
+/* stat cells */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:4px;overflow:hidden;margin-top:56px;background:#fff}
+.stat{padding:22px 20px;border-left:1px solid var(--line)}
+.stat:first-child{border-left:none}
+.stat b{display:block;font-family:var(--mono);font-weight:500;font-size:clamp(22px,2.6vw,30px);color:var(--teal-deep);letter-spacing:-.01em}
+.stat span{display:block;margin-top:6px;font-size:13.5px;color:var(--muted);line-height:1.45}
+@media(max-width:860px){.stats{grid-template-columns:1fr 1fr}.stat:nth-child(3){border-left:none}.stat{border-top:1px solid var(--line)}.stat:nth-child(-n+2){border-top:none}}
+@media(max-width:480px){.stats{grid-template-columns:1fr}.stat{border-left:none;border-top:1px solid var(--line)}.stat:first-child{border-top:none}}
+
+/* ---------- brands ---------- */
+.brands-group{margin-bottom:26px}
+.brands-label{font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{font-family:var(--mono);font-size:13px;padding:8px 14px;border:1px solid var(--line);border-radius:3px;background:#fff;color:var(--ink)}
+.chip.hl{border-color:var(--teal);color:var(--teal-deep);background:var(--cell)}
+
+/* ---------- cases ---------- */
+.case{border:1px solid var(--line);border-radius:6px;background:#fff;padding:42px;margin-bottom:30px}
+.case h3{font-family:var(--display);font-weight:800;font-size:clamp(22px,2.8vw,29px);letter-spacing:-.015em;margin:12px 0 14px;max-width:30ch}
+.case p{color:var(--muted);max-width:74ch}
+.case .lede{color:var(--ink)}
+.case ul{list-style:none;margin:18px 0}
+.case li{position:relative;padding-left:22px;margin-bottom:10px;color:var(--muted);max-width:78ch}
+.case li::before{content:"";position:absolute;left:0;top:.62em;width:9px;height:9px;background:var(--cell);border:1.5px solid var(--teal);border-radius:2px}
+.case li b{color:var(--ink);font-weight:600}
+.case-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line);border-radius:4px;overflow:hidden;margin:26px 0 8px}
+.case-stats .stat{padding:16px 16px}
+.case-stats .stat b{font-size:20px}
+.case-stats .stat span{font-size:12.5px}
+@media(max-width:860px){.case{padding:28px 22px}.case-stats{grid-template-columns:1fr 1fr}.case-stats .stat:nth-child(3){border-left:none}.case-stats .stat{border-top:1px solid var(--line)}.case-stats .stat:nth-child(-n+2){border-top:none}}
+@media(max-width:480px){.case-stats{grid-template-columns:1fr}.case-stats .stat{border-left:none;border-top:1px solid var(--line)}.case-stats .stat:first-child{border-top:none}}
+.kicker{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);margin:26px 0 8px;font-weight:500}
+.chart-wrap{margin:26px 0 4px;padding:22px 18px 14px;border:1px solid var(--line);border-radius:4px;background:var(--paper)}
+.chart-cap{font-family:var(--mono);font-size:11.5px;color:var(--muted);margin-top:10px;letter-spacing:.03em}
+.chart-title{font-family:var(--mono);font-size:12.5px;color:var(--ink);margin-bottom:12px;letter-spacing:.04em;font-weight:500}
+.charts2{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:26px 0 4px}
+.charts2 .chart-wrap{margin:0}
+@media(max-width:860px){.charts2{grid-template-columns:1fr}}
+.also{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:8px}
+.also-card{border:1px solid var(--line);border-radius:6px;background:#fff;padding:24px}
+.also-card .eyebrow{display:block;margin-bottom:10px}
+.also-card p{font-size:14.5px;color:var(--muted)}
+@media(max-width:860px){.also{grid-template-columns:1fr}}
+
+/* ---------- services & stack ---------- */
+.svc{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.svc-card{border:1px solid var(--line);border-radius:6px;background:#fff;padding:26px 22px}
+.svc-card h4{font-family:var(--display);font-weight:700;font-size:17px;margin-bottom:10px;letter-spacing:-.01em}
+.svc-card p{font-size:14px;color:var(--muted)}
+@media(max-width:980px){.svc{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.svc{grid-template-columns:1fr}}
+.stack-note{font-size:14px;color:var(--muted);margin-top:18px}
+
+/* ---------- testimonials ---------- */
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.quote{border:1px solid var(--line);border-left:3px solid var(--teal);border-radius:6px;background:#fff;padding:26px 24px;display:flex;flex-direction:column;gap:16px}
+.quote p{font-size:15px;color:var(--ink)}
+.quote footer{font-family:var(--mono);font-size:12.5px;color:var(--muted);line-height:1.5}
+.quote footer b{display:block;color:var(--ink);font-weight:500}
+@media(max-width:900px){.quotes{grid-template-columns:1fr}}
+
+/* ---------- contact ---------- */
+.contact{background:var(--ink);color:#fff;border-top:none}
+.contact .eyebrow{color:#7FD1C7}
+.contact h2{font-family:var(--display);font-weight:800;font-size:clamp(30px,4.4vw,46px);letter-spacing:-.02em;margin:14px 0 10px}
+.contact p{color:#A8B5B1;max-width:56ch}
+.contact-row{margin-top:34px;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.contact .btn{border-color:#7FD1C7;color:#7FD1C7}
+.contact .btn:hover{background:#7FD1C7;color:var(--ink)}
+.contact .btn-solid{background:#7FD1C7;color:var(--ink);border-color:#7FD1C7}
+.contact .btn-solid:hover{background:#fff;border-color:#fff}
+.contact-meta{font-family:var(--mono);font-size:13px;color:#A8B5B1;margin-top:26px}
+.contact-meta a{color:#7FD1C7}
+.foot{font-family:var(--mono);font-size:11.5px;color:#6E7C78;margin-top:46px;padding-top:22px;border-top:1px solid #2A3633}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .55s ease,transform .55s ease}
+.reveal.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap nav-in">
+    <span class="brand">ROHIT<b>·</b>MANNA</span>
+    <div class="nav-links">
+      <a href="#work">Brands</a>
+      <a href="#cases">Case studies</a>
+      <a href="#services">Services</a>
+      <a href="#testimonials">Testimonials</a>
+      <a class="btn" href="mailto:mannarohit13@gmail.com">Email me</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow">Retention & lifecycle growth · India / US</span>
+        <h1>I build <em>repeat-revenue engines</em> for D2C brands.</h1>
+        <p>Consultant for CRM strategy, WhatsApp and email lifecycle systems, content intelligence, and AI-assisted growth workflows. 14+ brands across India and the US.</p>
+        <div class="hero-cta">
+          <a class="btn btn-solid" href="#cases">See the work</a>
+          <a class="btn" href="mailto:mannarohit13@gmail.com">mannarohit13@gmail.com</a>
+        </div>
+      </div>
+      <div>
+        <div class="cohort" id="cohort" aria-hidden="true"></div>
+        <div class="cohort-cap">the cohort triangle: where my work is read</div>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><b>&times;17.6</b><span>monthly repeat revenue scaled at Yogabar in 7 months</span></div>
+      <div class="stat"><b>57.5%</b><span>peak repeat-revenue share at moha, up from 21.6%</span></div>
+      <div class="stat"><b>49% &rarr; 61%</b><span>M1&ndash;M6 retention, in-house at Mosaic Wellness</span></div>
+      <div class="stat"><b>2&times;</b><span>repeat revenue built from zero at Dame Health</span></div>
+    </div>
+  </div>
+</header>
+
+<section class="section" id="work">
+  <div class="wrap">
+    <div class="section-head"><span class="eyebrow">Brands</span><h2>Worked with</h2></div>
+    <div class="brands-group reveal">
+      <div class="brands-label">Consulting & independent</div>
+      <div class="chips">
+        <span class="chip hl">Yogabar</span><span class="chip hl">moha</span><span class="chip hl">Vedistry</span><span class="chip hl">365veda</span><span class="chip hl">ThinkRobotics</span><span class="chip hl">CybeArt</span><span class="chip">Dame Health</span><span class="chip">Indulge Global</span><span class="chip">Rezoni</span><span class="chip">Maate</span><span class="chip">The Wellness Shop</span>
+      </div>
+    </div>
+    <div class="brands-group reveal">
+      <div class="brands-label">In-house · Mosaic Wellness (Manager, Retention & Growth)</div>
+      <div class="chips">
+        <span class="chip">Man Matters</span><span class="chip">Be Bodywise</span><span class="chip">Little Joys</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="cases">
+  <div class="wrap">
+    <div class="section-head"><span class="eyebrow">Case studies</span><h2>Selected work, with the numbers</h2><a class="btn" style="margin-left:auto" href="case-studies.html">Open full case studies</a></div>
+
+    <!-- Yogabar -->
+    <article class="case reveal">
+      <span class="eyebrow">Yogabar · ITC-owned healthy snacking · Sep 2025 &ndash; present</span>
+      <h3>A repeat-revenue engine from zero that ended up redirecting company strategy</h3>
+      <p class="lede">Yogabar was growing almost entirely on acquisition: no lifecycle journeys, no broadcast programme, no segmentation. I was engaged to build the retention charter from scratch: strategy, infrastructure, and execution.</p>
+      <div class="kicker">The build</div>
+      <ul>
+        <li>Lifecycle journeys shipped in month one; the daily broadcast programme in month two, at <b>8.7 RoAS in its first month</b>.</li>
+        <li>Segmentation evolved to recency &times; product &times; acquisition-year, and spend moved 100% to cohorts that paid back.</li>
+        <li>A narrative system (reorder, cross-sell, engagement, offer, wallet hooks) tracked on per-narrative ROI; the wallet-expiry trigger became the programme's best campaign at <b>RoAS 56</b>.</li>
+      </ul>
+      <div class="kicker">The experiment that changed strategy</div>
+      <p>Mid-November tests on High Protein Oats cohorts converted at 3 to 4 times the account average, and cohort data showed oats buyers repeating fastest at M0&ndash;M1. I recommended shifting hero-product focus from RTD protein shakes (high AOV, low repeat) to oats (low AOV, high frequency), trading ticket size for lifetime value. The team adopted it: oats became the lead acquisition and CRM product, and December oats campaigns ran at ROI 7 to 8.</p>
+      <div class="case-stats">
+        <div class="stat"><b>&times;17.6</b><span>monthly repeat revenue, in 7 months</span></div>
+        <div class="stat"><b>31&times;</b><span>monthly repeat orders</span></div>
+        <div class="stat"><b>27.9% &rarr; 33.5%</b><span>repeat-revenue share, base nearly doubled</span></div>
+        <div class="stat"><b>1.7 &rarr; 5+</b><span>campaign ROI, Nov to Mar</span></div>
+      </div>
+      <div class="charts2">
+        <div class="chart-wrap">
+          <div class="chart-title">Monthly repeat revenue (INR lakh)</div>
+          <svg viewBox="0 0 560 210" width="100%" role="img" aria-label="Monthly repeat revenue rising from 8.9 lakh in August to 157.8 lakh in March">
+            <g font-family="IBM Plex Mono, monospace" font-size="11" fill="#5B6B67" text-anchor="middle">
+              <text x="36" y="192">Aug</text><text x="102" y="192">Sep</text><text x="168" y="192">Oct</text><text x="234" y="192">Nov</text><text x="300" y="192">Dec</text><text x="366" y="192">Jan</text><text x="432" y="192">Feb</text><text x="498" y="192">Mar</text>
+            </g>
+            <g font-family="IBM Plex Mono, monospace" font-size="10.5" fill="#16211F" text-anchor="middle">
+              <text x="36" y="161">8.9</text><text x="102" y="157">13.2</text><text x="168" y="152">18.4</text><text x="234" y="135">36.5</text><text x="300" y="119">53.5</text><text x="366" y="85">89.2</text><text x="432" y="54">121.6</text><text x="498" y="19">157.8</text>
+            </g>
+            <g>
+              <rect x="16" y="166.5" width="40" height="8.5" fill="#9CA3AF"></rect>
+              <rect x="82" y="162.5" width="40" height="12.5" fill="#0F766E"></rect>
+              <rect x="148" y="157.5" width="40" height="17.5" fill="#0F766E"></rect>
+              <rect x="214" y="140.3" width="40" height="34.7" fill="#0F766E"></rect>
+              <rect x="280" y="124.1" width="40" height="50.9" fill="#0F766E"></rect>
+              <rect x="346" y="90.2" width="40" height="84.8" fill="#0F766E"></rect>
+              <rect x="412" y="59.4" width="40" height="115.6" fill="#0F766E"></rect>
+              <rect x="478" y="25" width="40" height="150" fill="#0F766E"></rect>
+            </g>
+            <line x1="10" y1="175.5" x2="550" y2="175.5" stroke="#D9E0DD" stroke-width="1"></line>
+          </svg>
+          <div class="chart-cap">Shopify-reported, Aug 2025 to Mar 2026. Aug = pre-engagement baseline. Mar = INR 1.58Cr.</div>
+        </div>
+        <div class="chart-wrap">
+          <div class="chart-title">Activation % growth, month over month</div>
+          <svg viewBox="0 0 560 210" width="100%" role="img" aria-label="Activation percentage growth month over month: plus 40 percent in September, plus 68 percent in October, sustained above 40 percent November through January">
+            <g font-family="IBM Plex Mono, monospace" font-size="11" fill="#5B6B67" text-anchor="middle">
+              <text x="72" y="192">Sep</text><text x="172" y="192">Oct</text><text x="272" y="192">Nov</text><text x="372" y="192">Dec</text><text x="472" y="192">Jan</text>
+            </g>
+            <g font-family="IBM Plex Mono, monospace" font-size="11" text-anchor="middle">
+              <text x="72" y="86" fill="#16211F">+40%</text><text x="172" y="28" fill="#16211F">+68%</text><text x="272" y="86" fill="#5B6B67">40%+</text><text x="372" y="86" fill="#5B6B67">40%+</text><text x="472" y="86" fill="#5B6B67">40%+</text>
+            </g>
+            <g>
+              <rect x="40" y="92.6" width="64" height="82.4" fill="#0F766E"></rect>
+              <rect x="140" y="35" width="64" height="140" fill="#0F766E"></rect>
+              <rect x="240" y="92.6" width="64" height="82.4" fill="#A7CFCA"></rect>
+              <rect x="340" y="92.6" width="64" height="82.4" fill="#A7CFCA"></rect>
+              <rect x="440" y="92.6" width="64" height="82.4" fill="#A7CFCA"></rect>
+            </g>
+            <line x1="10" y1="175.5" x2="550" y2="175.5" stroke="#D9E0DD" stroke-width="1"></line>
+          </svg>
+          <div class="chart-cap">Activation % = repeat orders this month divided by the entire customer base accumulated to date, so acquisition surges cannot flatter it. Nov to Jan shown at the documented 40% floor (reported as 40%+ MoM). Repeat buyers compounded 7 to 8 times faster than the total base (449% vs 58% cumulative).</div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Moha & Vedistry -->
+    <article class="case reveal">
+      <span class="eyebrow">moha & Vedistry · Charak Pharma D2C · Dec 2025 &ndash; present</span>
+      <h3>A content-intelligence engine for two-brand retention</h3>
+      <p class="lede">Two ayurvedic D2C brands running WhatsApp and SMS CRM across lifecycle flows and daily campaigns. I own retention strategy, the content system, experimentation, and monthly executive reporting.</p>
+      <div class="case-stats">
+        <div class="stat"><b>21.6% &rarr; 57.5%</b><span>moha repeat-revenue share (Mar 2025 to Aug 2026), a series high</span></div>
+        <div class="stat"><b>&times;5</b><span>Vedistry repeat revenue built, Nov 2025 to Aug 2026</span></div>
+        <div class="stat"><b>10.1% &rarr; 28.4%</b><span>Vedistry repeat share over the same window</span></div>
+        <div class="stat"><b>2.4&times;</b><span>click-to-order from pattern-based copy rewrites</span></div>
+      </div>
+      <ul>
+        <li><b>The divergence:</b> moha's store contracted, with monthly orders falling to roughly a third of where they began, while its repeat share climbed to a series-high 57.5%. Vedistry built repeat revenue about fivefold on a growing base. One engine, two starting points.</li>
+        <li><b>Content analysis:</b> 39 live recovery copies distilled into six winning patterns and the anti-patterns behind fifteen zero-converting sends. The proof pairs: the same SMS slot at 10.95&times; ROI vs 0&times;, and one identical creative at 1.65&times; vs 15.15&times; under two different copies. In WhatsApp recovery, copy converts; the creative amplifies.</li>
+        <li><b>A/B testing:</b> copy-isolated tests (equal splits, identical landing page) put rewrites at 2.4&times; the incumbent's click-to-order while the incumbent won raw clicks. Curiosity clicks are not intent clicks.</li>
+        <li><b>Flows over broadcasts:</b> triggered automations out-returned calendar broadcasts on every efficiency metric; Vedistry automations returned &#8377;3.96 per rupee against &#8377;1.04 from broadcasts.</li>
+        <li><b>System:</b> the loop runs on an LLM-assisted pipeline I designed: campaign exports in; diagnosis, corrected copy, and re-tests out, every month.</li>
+      </ul>
+    </article>
+
+    <!-- Mosaic -->
+    <article class="case reveal">
+      <span class="eyebrow">Mosaic Wellness · In-house · Manager, Retention & Growth · 2022&ndash;2023</span>
+      <h3>Scaling retention across a house of brands</h3>
+      <p class="lede">Owned the retention charter across Man Matters, Be Bodywise, and Little Joys: CRM strategy, lifecycle communication, and repeat-revenue growth on a base adding 40K+ new customers a month at the flagship brand.</p>
+      <ul>
+        <li><b>M1&ndash;M6 retention 49% &rarr; 61%</b>; annual repeat revenue <b>&#8377;33Cr &rarr; &#8377;40Cr</b>.</li>
+        <li>Category-affinity personalization locked reorder and cross-sell nudges to the first-purchase category; expectation-setting communication lifted M1&ndash;M3 adherence.</li>
+        <li>Launched the Habit Tracker, a streak-based retention loop: <b>DAU 2,000 &rarr; 26,000+</b>. Reactivated dormant cohorts over low-cost SMS: daily repeat traffic 33K &rarr; 40K.</li>
+        <li>A cohort A/B programme across send time, day, and content theme cut acquisition costs 20%.</li>
+      </ul>
+    </article>
+
+    <div class="also">
+      <div class="also-card reveal">
+        <span class="eyebrow">ThinkRobotics</span>
+        <p>Redesigned segmentation into a three-dimensional lifecycle framework (product affinity &times; lifecycle stage &times; buyer type) powering recency-tiered WhatsApp broadcasts and attribution-tracked campaigns.</p>
+      </div>
+      <div class="also-card reveal">
+        <span class="eyebrow">CybeArt · US/CA</span>
+        <p>The full Klaviyo retention stack for a gaming-furniture brand across US and CA: a fifteen-flow architecture across four categories, device-tested signup forms, and a reusable copy system. Behavioural flows drove 62% of attributed revenue from 5% of recipients.</p>
+        <p style="margin-top:12px"><a href="proof-of-work.html">Read the Klaviyo proof of work &rarr;</a></p>
+      </div>
+      <div class="also-card reveal">
+        <span class="eyebrow">Dame Health</span>
+        <p>Retention charter from zero: MSG91 and WhatsApp Cloud API integrated with Shopify, the full flow suite, and a pre-delivery context flow that cut RTO. Repeat revenue doubled.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="section-head"><span class="eyebrow">Services</span><h2>What I do</h2></div>
+    <div class="svc">
+      <div class="svc-card reveal"><h4>Flow & journey architecture</h4><p>Welcome, abandoned cart and checkout, post-purchase, replenishment: designed, written, and shipped on WhatsApp, SMS, and email.</p></div>
+      <div class="svc-card reveal"><h4>Segmentation & lifecycle strategy</h4><p>Recency &times; product &times; value frameworks that decide who hears what, and which cohorts stop getting spend.</p></div>
+      <div class="svc-card reveal"><h4>Content intelligence & A/B testing</h4><p>Copy and creative pattern analysis, competitive teardowns, and copy-isolated experiments that compound into playbooks.</p></div>
+      <div class="svc-card reveal"><h4>AI-assisted CRM workflows</h4><p>Audience profiling, content generation, and root-cause analysis.</p></div>
+    </div>
+    <div class="brands-group" style="margin-top:46px">
+      <div class="brands-label">Go-to stack</div>
+      <div class="chips reveal">
+        <span class="chip">Klaviyo</span><span class="chip">CleverTap</span><span class="chip">HubSpot</span><span class="chip">MoEngage</span><span class="chip">Mailchimp</span><span class="chip">Twilio SendGrid</span><span class="chip">BIK</span><span class="chip">Gupshup</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="testimonials">
+  <div class="wrap">
+    <div class="section-head"><span class="eyebrow">Testimonials</span><h2>What partners say</h2></div>
+    <div class="quotes">
+      <blockquote class="quote reveal">
+        <p>&ldquo;Rohit did not just run our CRM, he built a system around it. Every copy, creative, and offer now has a number against it, and the monthly diagnosis tells us exactly what to fix next. Repeat share hit an all-time high in a month where overall demand was down. That is his engine working.&rdquo;</p>
+        <footer><b>Ashish Burade</b>Growth Partner, moha &amp; Vedistry</footer>
+      </blockquote>
+      <blockquote class="quote reveal">
+        <p>&ldquo;He stood up our entire retention infrastructure, the flows, the campaign architecture, and a copy system, with more structure in weeks than agencies gave us in quarters. The thinking is original and the execution is fast.&rdquo;</p>
+        <footer><b>Raj Vasani</b>CMO, CybeArt</footer>
+      </blockquote>
+      <blockquote class="quote reveal">
+        <p>&ldquo;Rohit built our retention charter from zero, and within a quarter his cohort work was changing what we lead with as a company. The oats call came from his data. Repeat revenue is now a large multiple of where we started.&rdquo;</p>
+        <footer><b>Vaishnavi Ganeshe</b>CMO, Yogabar</footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="section contact" id="contact">
+  <div class="wrap">
+    <span class="eyebrow">Contact</span>
+    <h2>Have a repeat problem worth solving?</h2>
+    <p>I work with D2C brands in India and the US on retention, lifecycle, and CRM-led growth. The full case studies and the Klaviyo email proof of work, with complete data and charts, are linked below.</p>
+    <div class="contact-row">
+      <a class="btn btn-solid" href="mailto:mannarohit13@gmail.com">mannarohit13@gmail.com</a>
+      <a class="btn" href="case-studies.html">Full case studies</a>
+      <a class="btn" href="proof-of-work.html">Email proof of work</a>
+      <a class="btn" href="https://www.linkedin.com/in/rohit-manna-15202020a" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <div class="contact-meta">Based in India · Working across IST and US hours · +91 90073 32148</div>
+    <div class="foot">&copy; 2026 Rohit Manna · Retention &amp; Lifecycle Growth</div>
+  </div>
+</section>
+
+<script>
+// cohort staircase: 7x7, lower-left triangle filled, diagonal in teal with staggered pop
+(function(){
+  var c = document.getElementById('cohort');
+  if(!c) return;
+  var n = 7, delay = 0;
+  for(var r=0; r<n; r++){
+    for(var col=0; col<n; col++){
+      var i = document.createElement('i');
+      var filledCols = n - r; // row 0 fully filled, staircase down
+      if(col < filledCols - 1){ i.className = 'f'; }
+      else if(col === filledCols - 1){ i.className = 'd'; i.style.animationDelay = (0.15 + r*0.12) + 's'; }
+      else { i.className = 'x'; }
+      c.appendChild(i);
+    }
+  }
+})();
+// scroll reveals
+(function(){
+  var els = document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){ els.forEach(function(e){e.classList.add('in')}); return; }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+  },{threshold:0.12});
+  els.forEach(function(e){ io.observe(e); });
+})();
+</script>
+</body>
+</html>
